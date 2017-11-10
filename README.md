@@ -1,7 +1,7 @@
 # EPIANN
 
 Inspired by machine translation models we develp an attention-based nerual network model, EPIANN.
-![Schematic overview of EPIANN](https://github.com/wgmao/EPIANN/EPIANN.png?raw=true)
+![Schematic overview of EPIANN](/EPIANN.png?raw=true)
 
 R (3.4.2) Library dependencies
 
