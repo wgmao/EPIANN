@@ -12,7 +12,7 @@ https://<i></i>github.com/shwhalen/targetfinder/tree/master/paper/targetfinder/<
 
 Before we actually train oorneural network model, we need to generate input data from genomic coordinates(hg19) of enhancers and promoters, along with the indicators of EPIs recorded in **celline.csv**. **Data_Augmentation.R** encoded an automatic data augmentation pipeline with several parameters specified in the following table.
 
-Parameter| Explanation
+Parameters| Explanation
 --- | ---
 celline| change it to one of the 6 cell lines with default = "IMR90"
 folder | the name of the folder to hold all output files with default = "aug_50"
@@ -26,24 +26,26 @@ random_seed| the random seed to sample test data with default = 1
 You can find the output files with default parameters under the directory IMR90/aug_50/. The following files are currently not avaiable in the github repository because of the size limit (Work In Progress).
 
 ```
-aug_50/IMR90_enhancer.fasta
-aug_50/IMR90_promoter.fasta
-aug_50/imbalanced/IMR90_enhancer.fasta
-aug_50/imbalanced/IMR90_promoter.fasta
+IMR90/aug_50/IMR90_enhancer.fasta
+IMR90/aug_50/IMR90_promoter.fasta
+IMR90/aug_50/imbalanced/IMR90_enhancer.fasta
+IMR90/aug_50/imbalanced/IMR90_promoter.fasta
 ```
 
 
 ## Train Neural Netork Model
+Under the directory IMR90/, you can find an example python script **IMR90_EPIANN.py** with the default setting. The parameters regarding inputs are explained in the following table.
 
-Parameter| Explanation
+Parameters| Explanation
 --- | ---
 celline|chanage it to one of the 6 cell lines with default = 'IMR90'
 file_pre|change it to be the folder containing augmented data with default = 'aug_50/IMR90'
 out_dir|change it to be the folder that contains the output with dedault = 'output/IMR90_EPIANN'
 script_id|change it to be the current python script name in order to distinguish the outputs from multiple runs with default = 'IMR90_EPIANN'
 
+The computational grpaph for the neural network is programmed using Tensorflow. On our setup, we use a single NVIDIA GTX 1080 or NVIDIA TITAN X with 5 CPU threads. A single batch takes about 6 seconds to train. All neural neural parameters can be altered in the script.
 
-Neural Network Parameter| Explanation
+Neural Network Parameters| Explanation
 --- | ---
 enhancer_length| the length of input enhancers with default = 3000
 promoter_length | the length of input promoters with default = 2000
