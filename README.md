@@ -1,20 +1,22 @@
 # EPIANN
 
-Library dependencies
+
+R (3.4.2) Library dependencies
 
 ```
-glmnet
+GenomicRanges
+BSgenome.Hsapiens.UCSC.hg19.masked
 ```
 
-Additional library dependencies for the vignettes
+Python (2.7.6) Module dependencies
+```
+os
+pickle
+time
+tensorflow 1.3.0
+numpy 1.13.3
+Sklearn 0.18.1
+Biopython 1.67
+
 
 ```
-RColorBrewer
-gplots
-pheatmap
-```
-
-To install the R package
-```
-library(devtools)
-install_github("wgmao/PLIER")
