@@ -1,7 +1,8 @@
 # EPIANN
 
-![alt text](https://github.com/wgmao/EPIANN/EPIANN.png "Schematic overview of EPIANN")
+![Schematic overview of EPIANN](https://octodex.github.com/images/yaktocat.png)
 
+https://github.com/wgmao/EPIANN/EPIANN.png
 
 R (3.4.2) Library dependencies
 
