@@ -74,6 +74,7 @@ BSgenome.Hsapiens.UCSC.hg19.masked 1.3.99
 ```
 
 Python (2.7.6) Module dependencies
+
 ```
 os
 pickle
@@ -82,6 +83,4 @@ tensorflow 1.3.0
 numpy 1.13.3
 Sklearn 0.18.1
 Biopython 1.67
-
-
 ```
