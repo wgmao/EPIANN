@@ -1,6 +1,6 @@
 # EPIANN
 
-![Schematic overview of EPIANN](/EPIANN.png?raw=true)
+![Schematic overview of EPIANN](/EPIANN.png)
 
 R (3.4.2) Library dependencies
 
