@@ -4,8 +4,8 @@
 R (3.4.2) Library dependencies
 
 ```
-GenomicRanges
-BSgenome.Hsapiens.UCSC.hg19.masked
+GenomicRanges 1.28.2
+BSgenome.Hsapiens.UCSC.hg19.masked 1.3.99
 ```
 
 Python (2.7.6) Module dependencies
