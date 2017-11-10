@@ -12,12 +12,14 @@ https://<i></i>github.com/shwhalen/targetfinder/tree/master/paper/targetfinder/<
 
 Parameter| Explanation
 --- | ---
-num_of_trails | number of random searches before GP starts 
-num_of_GP     |number of Gaussian Process search steps     
-p_upper_limit| p is between -1 and 1 and this is set to be 1 most of time
-nPC| upper bound on the number of principal components
-p_thresh| 0.05 is standard
-svdres|output from svd() function
+celline| change it to one of the 6 cell lines with default = "IMR90"
+folder | the name of the folder to hold all output files with default = "aug_50"
+shift_distance  | the step size to slide extended region around the enhancer and promoter with default = 50
+enhancer_target_length| the length of extended enhancer with default = 3000
+promoter_target_length| the length of extended promoter with default = 2000 
+positive_scalar| the augmentation ratio with default = 20
+test_percent| the percent of test data among all with default = 0.1
+random_seed| the random seed to sample test data with default = 1
 
 ## Train Neural Netork Model
 
