@@ -23,7 +23,7 @@ positive_scalar| the augmentation ratio with default = 20
 test_percent| the percent of test data among all with default = 0.1
 random_seed| the random seed to sample test data with default = 1
 
-You can find the output files with default parameters under the directory IMR90/aug_50/. The following files are currently not avaiable in the github repository because of the size limit (Work In Progress).
+You can find the output files with default parameters under the directory IMR90/aug_50/. ~~The following files are currently not avaiable in the github repository because of the size limit (Work In Progress).~~ They are avaiable in the repository.
 
 ```
 IMR90/aug_50/IMR90_enhancer.fasta
