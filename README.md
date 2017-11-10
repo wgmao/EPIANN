@@ -10,6 +10,8 @@ There are 6 cell lines. which are **celline**=**GM12878**, **HUVEC**, **HeLa-S3*
 https://<i></i>github.com/shwhalen/targetfinder/tree/master/paper/targetfinder/<b>celline</b>/output-ep/pairs.csv
 </p>
 
+Before we actually train oorneural network model, we need to generate input data from genomic coordinates(hg19) of enhancers and promoters, along with the indicators of EPIs recorded in **celline.csv**. **Data_Augmentation.R** encoded an automatic data augmentation pipeline with several parameters specified in the following table.
+
 Parameter| Explanation
 --- | ---
 celline| change it to one of the 6 cell lines with default = "IMR90"
@@ -20,6 +22,16 @@ promoter_target_length| the length of extended promoter with default = 2000
 positive_scalar| the augmentation ratio with default = 20
 test_percent| the percent of test data among all with default = 0.1
 random_seed| the random seed to sample test data with default = 1
+
+You can find the output files with default parameters under the directory IMR90/aug_50/. The following files are currently not avaiable in the github repository because of the size limit (Work In Progress).
+
+```
+aug_50/IMR90_enhancer.fasta
+aug_50/IMR90_promoter.fasta
+aug_50/imbalanced/IMR90_enhancer.fasta
+aug_50/imbalanced/IMR90_promoter.fasta
+```
+
 
 ## Train Neural Netork Model
 
