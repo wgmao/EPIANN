@@ -1,6 +1,6 @@
 # EPIANN
 
-![alt text](https://github.com/wgmaoEPIANN/EPIANN.png "Schematic overview of EPIANN")
+![alt text](https://github.com/wgmao/EPIANN/EPIANN.png "Schematic overview of EPIANN")
 
 
 R (3.4.2) Library dependencies
