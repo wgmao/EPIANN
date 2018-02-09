@@ -512,13 +512,11 @@ for i in range(num_of_batches):
     if (i %batch_per_epoch==0) and (i>0):
         perm = np.random.permutation(seq_ep.shape[0])
         seq_ep = seq_ep[perm]
-        perm = np.random.permutation(seq_en.shape[0])
-        seq_en = seq_en[perm]
-        perm = np.random.permutation(seq_pp.shape[0])
         seq_pp = seq_pp[perm]
-        perm = np.random.permutation(seq_pn.shape[0])
+	perm = np.random.permutation(seq_en.shape[0])
+        seq_en = seq_en[perm]
         seq_pn = seq_pn[perm]
-        
+	        
         if (i % (10*batch_per_epoch) == 0):
             count_epoch = count_epoch+10
             saver.save(sess, 'output/'+script_id+'/'+str(count_epoch))
