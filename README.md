@@ -81,6 +81,6 @@ pickle
 time
 tensorflow 1.3.0
 numpy 1.13.3
-Sklearn 0.18.1
+~~Sklearn 0.18.1~~ Sklearn 0.19.1
 Biopython 1.67
 ```
